@@ -2,6 +2,14 @@
 
 This is an Android application for searching and exploring artists and their artworks using the Artsy API. The app allows users to search for artists, view detailed information about them, browse their artworks, and save their favorite artists.
 
+
+The Web portal can be reached on: https://csci571-hw5-nrocikay.wl.r.appspot.com/
+
+Details about the back end can be found in this [repo](https://github.com/Omiikay/Artsy-Backend).
+
+Details about the web front end can be found in this [repo](https://github.com/Omiikay/Artsy-Frontend).
+
+
 ## Technology Stack
 
 ```mermaid
@@ -133,16 +141,14 @@ The app follows the MVVM (Model-View-ViewModel) architecture pattern with the fo
 
 ```
 com.csci571.artsyapp/
+├── ArtistSearchApplication.kt # This is the main application class for the Artsy app.
+│ 
 ├── data/
 │   ├── api/
 │   │   ├── ApiClient.kt       # Retrofit client setup
 │   │   └── ArtsyApi.kt        # API endpoints interface
 │   ├── model/
-│   │   ├── ArtistDetail.kt    # Artist data models
-│   │   ├── Artwork.kt         # Artwork data models
-│   │   ├── Category.kt        # Category data models
-│   │   ├── Favorite.kt        # Favorite artist models
-│   │   └── User.kt            # User authentication models
+│   │   ├── Models.kt          # Containing Artist data models, Artwork data models, Category data models, Favorite artist models, User authentication models
 │   └── repository/
 │       ├── ArtsyRepository.kt # Artist/artwork data operations
 │       ├── AuthRepository.kt  # Authentication operations
@@ -152,6 +158,7 @@ com.csci571.artsyapp/
 │   │   ├── ArtistCard.kt      # Reusable artist card component
 │   │   ├── CategoryCarousel.kt # Artwork categories display
 │   │   ├── SearchBar.kt       # Search input component
+│   │   ├── MarkdownLinkText.kt# Process data link text in artwork descriptions
 │   │   └── SnackbarHost.kt    # Global notification component
 │   ├── screens/
 │   │   ├── ArtistDetailScreen.kt # Artist details page
@@ -161,6 +168,8 @@ com.csci571.artsyapp/
 │   │   ├── RegisterScreen.kt  # Registration page
 │   │   └── SearchResultScreen.kt # Search results page
 │   ├── theme/
+│   │   ├── Color.kt           # App colors
+│   │   ├── Types.kt           # Text styling
 │   │   └── Theme.kt           # App theming & styling
 │   └── viewmodel/
 │       ├── ArtistDetailViewModel.kt # Details screen logic
@@ -182,9 +191,6 @@ com.csci571.artsyapp/
 3. Update the `Constants.kt` file with your API base URL
 4. Build and run the application on an emulator or physical device
 
-## Screenshots
-
-[Place your screenshots here]
 
 ## API Reference
 
@@ -195,15 +201,3 @@ The application communicates with a Node.js backend that interfaces with the Art
 - Artist search and filtering
 - Artwork retrieval
 - Favorites management
-
-## Credits
-
-- [Artsy API](https://developers.artsy.net/) for providing the artist data
-- [Coil](https://coil-kt.github.io/coil/) for image loading
-- [Retrofit](https://square.github.io/retrofit/) for API communication
-- [Material Design](https://m3.material.io/) for UI components
-- [CSCI 571](https://csci571.com/) - Web Technologies course
-
----
-
-This project was developed as part of the CSCI 571 course at the University of Southern California.
