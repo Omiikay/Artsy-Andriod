@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item android:drawable="@color/white"/>  &lt;!&ndash; 背景颜色 &ndash;&gt;-->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/ic_artsy_logo_trans"/>  <!-- 未裁剪的图标 -->
+    </item>
+</layer-list>

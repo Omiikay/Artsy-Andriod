@@ -1,0 +1,35 @@
+*.iml
+/local.properties
+**/.idea/**
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# —— 应用与编译输出 ——
+# APK/AAB
+*.apk
+*.ap_
+*.aab
+
+# NDK 产物
+**/obj/
+
+# 中间产物
+*.dex
+*.class
+
+# Gradle 编译输出
+**/.gradle/
+build/
+**/build/
+
+# —— Kotlin & AnnotationProcessing ——
+# Kapt 产物
+*.kotlin_module
+# —— 日志 & 临时文件 ——
+*.log
+*.tmp
+*.bak

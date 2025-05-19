@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">ArtsyApp</string>
+
+    <!-- Common -->
+    <string name="no_results">No results.</string>
+    <string name="no_favorites">No favorites</string>
+    <string name="no_artworks">No artworks</string>
+    <string name="no_categories">No categories</string>
+    <string name="powered_by_artsy">Powered by Artsy</string>
+
+    <!-- Home Screen -->
+    <string name="login_to_see_favorites">Log in to see favorites</string>
+    <string name="favorites">Favorites</string>
+
+    <!-- Search Screen -->
+    <string name="search_hint">Please enter an artist name.</string>
+    <string name="search_results">Search Results</string>
+
+    <!-- Artist Detail Screen -->
+    <string name="details">Details</string>
+    <string name="artworks">Artworks</string>
+    <string name="similar">Similar</string>
+    <string name="view_categories">View categories</string>
+    <string name="categories">Categories</string>
+    <string name="close">Close</string>
+
+    <!-- Auth Screens -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name</string>
+
+    <!-- Snackbar Messages -->
+    <string name="logged_in_successfully">Logged in successfully</string>
+    <string name="registered_successfully">Registered successfully</string>
+    <string name="logged_out_successfully">Logged out successfully</string>
+    <string name="account_deleted_successfully">Account deleted successfully</string>
+    <string name="added_to_favorites">Added to favorites</string>
+    <string name="removed_from_favorites">Removed from favorites</string>
+</resources>
